@@ -1,0 +1,42 @@
+baseURL = "https://avs-ops.github.io/"
+languageCode = "en-us"
+title = "avs-ops"
+theme = "PaperMod"
+[pagination]
+  pagerSize = 10
+
+enableRobotsTXT = true
+buildDrafts = false
+buildFuture = false
+buildExpired = false
+canonifyURLs = true
+minify = { disableXML = true, minifyOutput = true }
+
+[params]
+  env = "production"
+  defaultTheme = "auto"         # light/dark auto
+  disableThemeToggle = false
+  ShowReadingTime = true
+  ShowShareButtons = true
+  ShowCodeCopyButtons = true
+  comments = true
+  author = "Vijay Kalvakolu"
+  description = "DevOps, Cloud, CI/CD, and automation notes."
+  # Socials for header/footer (optional)
+  # socialIcons = [{name = "github", url = "https://github.com/<YOUR_GITHUB_USERNAME>"}, {name="linkedin", url="https://www.linkedin.com/in/<your-handle>"}]
+
+[markup]
+  [markup.highlight]
+    noClasses = false           # use CSS classes for highlighting
+    lineNos = true
+    style = "dracula"           # pick any Chroma style you like
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[permalinks]
+  posts = "/posts/:slug/"
+
+[privacy]
+  [privacy.youtube]
+    privacyEnhanced = true
